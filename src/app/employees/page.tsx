@@ -18,8 +18,8 @@ import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link';
 
 const navigation = [
-  { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-  { name: 'Employees', href: '/employees', icon: UsersIcon, current: false },
+  { name: 'Dashboard', href: '/', icon: HomeIcon, current: false },
+  { name: 'Employees', href: '/employees', icon: UsersIcon, current: true },
   { name: 'Pay Rolls', href: '/payroll', icon: ChartPieIcon, current: false },
   { name: 'Data Upload', href: '/dataupload', icon: DocumentDuplicateIcon, current: false },
 ]
@@ -337,7 +337,7 @@ export default function Example() {
           </div>
 
           <main className="py-10">
-            <div className="px-4 sm:px-6 lg:px-8">{/* Your content */}</div>
+            <div className="px-4 sm:px-6 lg:px-8">Employees</div>
           </main>
         </div>
       </div>
